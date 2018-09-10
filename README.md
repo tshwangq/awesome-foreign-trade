@@ -24,6 +24,7 @@
 - [WhatsApp](https://www.whatsapp.com)
 - [ WAToolkit](https://chrome.google.com/webstore/detail/watoolkit/fedimamkpgiemhacbdhkkaihgofncola?hl=en) WhatsApp 浏览器插件 在浏览器中接收whatsapp消息
 - [Viber](https://www.viber.com)
+- [KakaoTalk](https://www.kakaocorp.com)
 
 ## 信息查询
 

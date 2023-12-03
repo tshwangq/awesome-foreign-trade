@@ -17,7 +17,7 @@
 - [Linkedin](https://www.linkedin.com)
 
 ## 聊天工具
-- [Telegram](https://web.telegram.org/)
+- [Telegram](https://web.telegram.org/)  多账号参见[telegram.md](telegram.md)
 - [Skype](https://www.skype.com)
 - [Line](https://www.linecorp.com)
 - [Trademanager](http://trademanager.alibaba.com)

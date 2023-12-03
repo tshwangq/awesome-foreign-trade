@@ -1,5 +1,9 @@
 # 实用外贸工具资源汇总 :sunglasses: [![](https://cdn.rawgit.com/sindresorhus/awesome/d7305f3/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
+## 多账号
+- 指纹浏览器
+- 独立IP
+- TickTok
 
 ## B2B 平台 
 

@@ -53,4 +53,35 @@
 
 这些差异保留为网络复核事项；页面用途尚未确认的旧资源继续留在 README 的待复核分类。
 
+### 默认分支启用
+
+提交 `5df5120` 已合入 `master`。[默认分支上的 Actions 运行](https://github.com/tshwangq/awesome-foreign-trade/actions/runs/38348186350)成功，格式、本地文件与标题链接检查通过。外链报告记录 8 项错误和 1 项超时，作为复核线索保留；每周一 02:00 UTC 的检查配置已在默认分支启用。
+
+### 外链复核与处理
+
+本轮结合浏览器页面、公开 DNS 和当前官方资料核查了上述 9 个异常目标。浏览器最初遇到本机代理认证问题，修复访问通路后重新检查；下表采用重新检查的结果。核查范围为公开页面与入口，不包含账号登录、真实货件查询、注册或付费操作。
+
+| 资源 | 复核依据 | 处理结果 |
+| --- | --- | --- |
+| TradeManager 旧入口 | [公开 DNS 查询](https://dns.google/resolve?name=trademanager.alibaba.com&type=A)返回 NXDOMAIN；官方仍有历史介绍，但旧子域名当前不存在。 | 移除旧入口并保留记录；这不代表已确认整个软件停止服务。另收录独立的 AliSuppliers 移动应用。 |
+| Was My Email Read | 域名仍有 A 记录；浏览器 HTTP 请求超时，HTTPS 连接失败，未取得产品内容。 | 保留待复核，尚不能断言服务停止。 |
+| EC21 | [当前官方首页](https://www.ec21.com/)可核对产品、供应商和采购需求；浏览器显示 Cloudflare 访问限制。 | 恢复到 B2B 分类，注明部分网络访问受限。 |
+| GlobalSpec | [当前官方首页](https://www.globalspec.com/)提供工业产品与供应商目录；浏览器显示网站访问验证。 | 以当前页面使用的 GlobalSpec 名称恢复收录，保留访问限制说明。 |
+| ECPlaza | 浏览器连接被关闭，资料核查请求也未取得当前产品页面。 | 保留待复核，尚未确认产品状态或迁移入口。 |
+| DHL | [官方追踪说明](https://www.dhl.com/cn-zh/home/tracking.html)仍可通过资料核查工具读取；浏览器遇到 HTTP/2 协议错误，另一次连接为空响应。 | 保留官方资源，明确浏览器访问异常尚待复核。 |
+| Maersk | 浏览器可读取追踪表单及提单、集装箱号码说明，虽然页面导航等待曾超时。 | 保留收录并补充号码类型；未测试实际货件查询。 |
+| 易之家海关数据 | 浏览器可读取当前海关数据介绍页以及登录、会员入口。 | 保留收录并说明会员服务；未测试实际数据查询或套餐。 |
+| TinEye | 官网响应要求 JavaScript；浏览器显示网站安全验证页面。 | 保留资源并注明访问条件，未进行图片检索测试。 |
+
+### 其他历史入口
+
+- B2S 的浏览器最终地址为 `forsale.godaddy.com/forsale/www.b2s.com`，落地页显示访问拒绝。原网址已跳转到域名出售路径，未提供原 B2B 内容，移出待复核表并保留本条历史记录。
+- WAToolkit 的商店页跳转到商品错误页，显示“Item not available”及登录提示。本轮未登录商店，保留待复核，不据此宣称扩展已永久下架。
+
+### 新增与补充信息的依据
+
+- AliSuppliers：核对了[官方移动应用入口](https://activity.alibaba.com/page/SupplierAPP_download.html)和 [Google Play 应用详情](https://play.google.com/store/apps/details?id=com.alibaba.icbu.app.seller)中的开发者身份。面向 Alibaba.com 供应商，支持查找询盘和客户消息；未安装应用，未确认会员费用，未宣称它是旧桌面软件的同名后继版本。
+- HubSpot CRM：依据[当前官网](https://www.hubspot.com/products/crm)补充网页平台、免费基础功能和付费进阶方案，未写入具体价格或套餐限额。
+- Zoho Invoice：依据[官方美国版介绍页](https://www.zoho.com/us/invoice/)补充免费服务与网页、移动端支持；不同地区版本及实际业务适用性需要使用者进一步确认。
+
 后续外链运行结果查看 Actions 中的 `external-link-report`；改变收录状态时，在本文件新增对应日期的记录。

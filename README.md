@@ -26,6 +26,8 @@
 
 - [TradeKey](https://www.tradekey.com/) — 查找供应商、产品与采购需求，用于开发海外业务线索。
 - [ECVV](https://www.ecvv.com/) — 工业产品采购平台，用于查找产品和供应商。
+- [EC21](https://www.ec21.com/) — 检索国际 B2B 产品、供应商和采购需求；官方内容已核对，部分网络访问受网站防护限制。
+- [GlobalSpec](https://www.globalspec.com/) — 查找工业产品与供应商目录，适合工业品选型和客户研究；部分网络需完成网站访问验证。
 
 ## 社交获客
 
@@ -36,11 +38,12 @@
 
 ## 客户管理
 
-- [HubSpot CRM](https://www.hubspot.com/products/crm) — 管理客户联系人、销售线索和跟进记录，适合将询盘集中到客户台账。
+- [HubSpot CRM](https://www.hubspot.com/products/crm) — 通过网页管理客户联系人、销售线索和跟进记录；提供免费基础功能及付费进阶方案（官网核查：2026-10-13）。
 
 ## 聊天工具
 
 - [Telegram](https://web.telegram.org/) — 与客户进行即时沟通；账户设置参见[账号管理指南](telegram.md)。
+- [AliSuppliers](https://activity.alibaba.com/page/SupplierAPP_download.html) — 阿里国际站供应商移动应用，集中查找询盘和客户消息；面向平台卖家，官方入口提供 Android、iOS 下载。
 - [LINE](https://www.line.me/en/) — 与使用 LINE 的客户进行消息沟通。
 - [WhatsApp](https://www.whatsapp.com/) — 与使用 WhatsApp 的客户保持日常消息联系。
 - [Viber](https://www.viber.com/en/) — 与使用 Viber 的客户进行消息和通话沟通。
@@ -48,14 +51,14 @@
 
 ## 报价与单证
 
-- [Zoho Invoice](https://www.zoho.com/invoice/) — 制作报价和发票，记录客户付款情况。
+- [Zoho Invoice](https://www.zoho.com/invoice/) — 制作报价和发票，记录客户付款情况；官网提供免费服务，支持网页及移动端（官网核查：2026-10-13）。
 - [Google Sheets](https://workspace.google.com/products/sheets/) — 协作维护报价表、订单台账和单证清单。
 
 ## 物流与货物追踪
 
 - [维运网](https://www.weiyun001.com/) — 查询船期、船公司及货物跟踪信息；属于第三方服务。
-- [DHL 货件追踪](https://www.dhl.com/cn-zh/home/tracking.html) — 使用运单号查询 DHL 货件的运输状态。
-- [Maersk 货物追踪](https://www.maersk.com/tracking/) — 查询马士基货运和集装箱运输状态。
+- [DHL 货件追踪](https://www.dhl.com/cn-zh/home/tracking.html) — 使用运单号查询 DHL 货件的运输状态；官方资料已核对，当前浏览器访问异常仍待复核。
+- [Maersk 货物追踪](https://www.maersk.com/tracking/) — 按提单号或集装箱号查询运输状态；已核对追踪表单，未提交实际货运号码。
 
 ## 官方信息查询
 
@@ -66,9 +69,9 @@
 
 - [HS 编码查询](https://www.hsbianma.com/) — 按商品名称或编码检索 HS 信息；属于第三方查询服务。
 - [Emailable](https://emailable.com/) — 检查邮箱地址的有效性，辅助整理客户联系信息；原 verify-email.org 已跳转至此服务。
-- [易之家海关数据](https://www.tradesns.com/business_info.php) — 查询平台提供的进出口数据，用于市场和客户研究。
+- [易之家海关数据](https://www.tradesns.com/business_info.php) — 查询平台提供的进出口数据，用于市场和客户研究；提供会员服务，具体数据覆盖范围以平台说明为准。
 - [The Money Converter](https://themoneyconverter.com/zh-CN/USD/GBP) — 查询币种换算和汇率信息，用于报价时的参考换算。
-- [TinEye](https://tineye.com/) — 通过图片反向检索来源，辅助核对产品图片。
+- [TinEye](https://tineye.com/) — 通过图片反向检索来源，辅助核对产品图片；需要 JavaScript，部分访问会触发网站验证。
 
 ## 待复核资源
 
@@ -76,10 +79,6 @@
 
 | 资源 | 原用途 | 待复核事项 |
 | --- | --- | --- |
-| [EC21](https://www.ec21.com/) | B2B 产品与供应商查询 | 本次请求返回 403，需人工确认页面。 |
-| [Engineering360](https://www.globalspec.com/) | 工业产品和供应商查询 | 本次请求返回 403，需人工确认页面。 |
-| [ECPlaza](https://www.ecplaza.net/) | B2B 产品与供应商查询 | 本次请求出现 TLS 连接异常。 |
-| [B2S](https://www.b2s.com/) | 原列为 B2B 平台 | 返回空页面并通过脚本跳转，尚未确认业务内容。 |
-| [TradeManager](http://trademanager.alibaba.com/) | 原列为聊天工具 | 本次请求返回 502，需确认当前官方入口与产品状态。 |
-| [WAToolkit](https://chromewebstore.google.com/detail/watoolkit/fedimamkpgiemhacbdhkkaihgofncola) | 原列为 WhatsApp 浏览器扩展 | 本次未取得完整产品详情，需确认扩展是否仍可用。 |
-| [Was My Email Read](http://www.wasmyemailread.com/) | 原列为邮件追踪工具 | 本次请求超时，需确认服务内容与当前状态。 |
+| [ECPlaza](https://www.ecplaza.net/) | B2B 产品与供应商查询 | 浏览器连接被关闭，尚未取得当前页面内容。 |
+| [WAToolkit](https://chromewebstore.google.com/detail/watoolkit/fedimamkpgiemhacbdhkkaihgofncola) | 原列为 WhatsApp 浏览器扩展 | 公开商店页显示“Item not available”并提示登录，尚未确认公开可用性。 |
+| [Was My Email Read](http://www.wasmyemailread.com/) | 原列为邮件追踪工具 | 域名仍有 DNS 记录，但 HTTP 超时、HTTPS 未能连通，服务状态尚未确认。 |

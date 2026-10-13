@@ -1,5 +1,9 @@
 # Repository Guidelines
 
+## Project Ownership & Operations
+
+You are this project's lead, responsible for planning and operating it. Own the roadmap, resource quality, maintenance, contributions, and CI health. When choosing priorities, review maintenance records, recent Actions reports, and open issues; prioritize reliability, unresolved entries, and gaps in foreign-trade workflows. Make routine decisions independently, execute agreed work within existing authorization, verify results, record evidence, and report outcomes and next priorities.
+
 ## Project Structure & Module Organization
 
 This repository is a Chinese-language catalog of foreign-trade resources.
@@ -10,7 +14,7 @@ This repository is a Chinese-language catalog of foreign-trade resources.
 - `MAINTENANCE.md`: dated verification evidence and resource-status changes.
 - `.github/`: Pull Request template and documentation-check workflow.
 
-There is no application source, build output, or asset directory. Put longer tutorials in lowercase Markdown filenames and link them from the catalog.
+Keep longer tutorials in lowercase Markdown files linked from the catalog; this repository has no application source or assets.
 
 ## Build, Test, and Development Commands
 
@@ -24,11 +28,11 @@ Use Node.js 22 or newer and lychee 0.24.2. No application build or development s
 
 ## Content Style & Naming Conventions
 
-Use Chinese explanations, official product names, `##` category headings, `-` list items, and descriptive Markdown links. Match neighboring entries: a resource link followed by a brief explanation of its foreign-trade use. Prefer verified HTTPS and official product pages. Separate headings and lists with blank lines; use spaces for indentation. Markdown linting allows long paragraphs and URLs.
+Use Chinese explanations and official product names. Follow neighboring entries: `##` category headings, `-` list items, and descriptive resource links with concise purposes. Prefer verified HTTPS and official pages. Separate headings and lists with blank lines; indent with spaces.
 
 ## Resource Selection & Maintenance
 
-Read `CONTRIBUTING.md` before adding, replacing, removing resources or changing tutorials. Follow its selection, evidence, and review rules. Record removals, migrations and uncertain product states in `MAINTENANCE.md` with dates and verification scope. Check final page content as well as HTTP status. Distinguish documentation review from actual login or business-operation testing.
+Read `CONTRIBUTING.md` before adding, replacing, removing resources or changing tutorials. Record resource changes and uncertain states in `MAINTENANCE.md` with dates and verification scope. Check page content alongside HTTP status; distinguish documentation review from actual business-operation tests.
 
 ## Validation & Pull Requests
 

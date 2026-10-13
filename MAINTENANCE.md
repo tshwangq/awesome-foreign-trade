@@ -85,3 +85,23 @@
 - Zoho Invoice：依据[官方美国版介绍页](https://www.zoho.com/us/invoice/)补充免费服务与网页、移动端支持；不同地区版本及实际业务适用性需要使用者进一步确认。
 
 后续外链运行结果查看 Actions 中的 `external-link-report`；改变收录状态时，在本文件新增对应日期的记录。
+
+### 第一次迭代：业务路径与官方查询
+
+启动时工作区干净，GitHub 无未关闭的 issue 或 Pull Request。[最近默认分支检查](https://github.com/tshwangq/awesome-foreign-trade/actions/runs/38352892954)通过；外链报告的 10 项错误和 1 项超时合并后对应 8 个不同的目标，重复出现于目录和历史记录。本轮优先补齐市场研究、英国企业登记核验与欧盟进口要求查询，并提供资源使用路径。
+
+| 新增资源 | 官方依据与收录范围 | 验证范围 |
+| --- | --- | --- |
+| UN Comtrade | [贸易数据参数说明](https://uncomtrade.org/docs/content-of-data/)支持按商品、报告方、伙伴和期间查询；[数据范围说明](https://uncomtrade.org/docs/does-un-comtrade-provide-buyer-supplier-level-data/)明确不提供买卖企业名称和联系方式。 | 核对官方文档与公开入口；主页依赖脚本，未执行数据查询或下载。 |
+| Companies House | [英国官方服务说明](https://www.gov.uk/get-information-about-a-company)及登记搜索页支持公司资料、登记地址和申报文件核对。 | 核对公开搜索页和文档；未查询特定客户，未登录或订阅提醒。 |
+| Access2Markets | [欧盟进口信息说明](https://policy.trade.ec.europa.eu/help-exporters-and-importers/importing-eu_en)列出关税、原产地规则、进口手续和产品要求；使用官方 My Trade Assistant 入口。 | 核对官方介绍与入口；未执行具体商品的税率、归类或要求查询。 |
+
+新增 `getting-started.md`、`ROADMAP.md`，并在贡献指南中明确每轮复核输入、重复异常处理和验收流程；`AGENTS.md` 增加相应文档索引。
+
+本机 HTTP GET 中，UN Comtrade、Access2Markets 和联合国、欧盟依据页均返回 200；Companies House 搜索页与英国官方说明遇到代理连接异常，但资料核查工具可读取对应正文，保留访问差异。ECPlaza 的本机请求仍有 TLS 异常。响应状态与页面用途分别核查，不以单次网络错误决定收录状态。
+
+ECPlaza 本次公开页面请求仍未取得内容，限定域名检索也没有结果，继续待复核；WAToolkit 与 Was My Email Read 本轮未取得新证据，保留原核查状态与日期。3 个待复核条目留作下一轮候选。
+
+本轮使用 markdownlint-cli2 0.23.3 检查 8 个 Markdown 文件，无格式问题；lychee 0.24.2 的本地文件与标题链接检查通过。已渲染并查看修改后的文档，确认业务路径表、计划表和导航链接结构。
+
+本机完整外链扫描记录 15 项错误、1 项超时，合并后为 11 个不同的异常目标。它包含英国官方页面的代理访问差异，以及海关、退税入口的本地连接问题；不能与此前 GitHub runner 的 8 个异常直接视为同环境趋势。公开资料已确认的入口保留收录，异常供后续复核，不放宽检查规则。对应提交的 GitHub 自动检查结果以 Actions 运行记录和附件为准。

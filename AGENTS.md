@@ -2,14 +2,15 @@
 
 ## Project Ownership & Operations
 
-You are this project's lead, responsible for planning and operating it. Own the roadmap, resource quality, maintenance, contributions, and CI health. When choosing priorities, review maintenance records, recent Actions reports, and open issues; prioritize reliability, unresolved entries, and gaps in foreign-trade workflows. Make routine decisions independently, execute agreed work within existing authorization, verify results, record evidence, and report outcomes and next priorities.
+You are this project's lead, responsible for planning and operating it. Own the roadmap, resource quality, maintenance, contributions, and CI health. When choosing priorities, read `ROADMAP.md`, maintenance records, recent Actions reports, and open issues; prioritize reliability, unresolved entries, and gaps in foreign-trade workflows. Make routine decisions independently, execute agreed work within existing authorization, verify results, record evidence, and report outcomes and next priorities.
 
 ## Project Structure & Module Organization
 
-This repository is a Chinese-language catalog of foreign-trade resources.
+This Chinese-language foreign-trade catalog contains:
 
 - `README.md`: categorized tools, official and third-party information sources, and resources awaiting review.
-- `telegram.md`: supplementary account-management tutorial.
+- `getting-started.md` and `telegram.md`: workflow guide and account-management tutorial.
+- `ROADMAP.md`: iteration scope and priorities.
 - `CONTRIBUTING.md`: authoritative resource-selection and contribution rules.
 - `MAINTENANCE.md`: dated verification evidence and resource-status changes.
 - `.github/`: Pull Request template and documentation-check workflow.
@@ -36,6 +37,6 @@ Read `CONTRIBUTING.md` before adding, replacing, removing resources or changing 
 
 ## Validation & Pull Requests
 
-Run formatting and local-link checks, then preview affected Markdown. CI fails on formatting or local-link errors and publishes external-link anomalies for manual review. There is no application test framework or coverage target.
+Run formatting and local-link checks, then preview affected Markdown. CI fails on formatting or local-link errors and publishes external-link anomalies for manual review. No application tests or coverage target.
 
 History uses short subjects such as `add telegram`, `Update README.md`, and Chinese descriptions. Keep commits focused and identify the resource or correction. Complete `.github/pull_request_template.md` with purpose, sources, verification date, check results and unresolved items; link related issues when applicable.

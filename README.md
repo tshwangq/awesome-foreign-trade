@@ -1,8 +1,8 @@
 # 实用外贸工具资源汇总 😎 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-按外贸业务场景整理工具和查询入口，帮助查找客户、跟进沟通、制作报价和追踪货物。条目说明侧重用途；收费、地区可用性和功能限制以对应服务的当前说明为准。
+按外贸业务场景整理工具和查询入口，帮助研究市场、核对客户、跟进沟通、制作报价和追踪货物。条目说明侧重用途；收费、地区可用性和功能限制以对应服务的当前说明为准。
 
-[贡献指南](CONTRIBUTING.md) · [维护记录](MAINTENANCE.md)
+[使用指南](getting-started.md) · [贡献指南](CONTRIBUTING.md) · [维护记录](MAINTENANCE.md) · [迭代计划](ROADMAP.md)
 
 ## 目录
 
@@ -62,6 +62,9 @@
 
 ## 官方信息查询
 
+- [UN Comtrade](https://comtradeplus.un.org/) — 联合国贸易统计入口，按商品、国家或地区及期间研究进出口市场；不提供买卖企业名称或联系方式，数据可用性取决于各报告方。
+- [Companies House](https://find-and-update.company-information.service.gov.uk/) — 英国官方公司登记查询，按公司名称或注册号核对登记地址、公司状态和申报资料；适用于英国公司。
+- [Access2Markets](https://trade.ec.europa.eu/access-to-markets/en/my-trade-assistant) — 欧盟官方贸易信息入口，按商品及出口国、目的国查找关税、原产地规则、进口手续与产品要求；适合研究进入欧盟市场的条件。
 - [海关政务服务](https://online.customs.gov.cn/) — 查找海关统计数据查询、舱单信息等官方服务入口；已核对官方资料，本地访问待复核。
 - [出口退税率查询](https://hd.chinatax.gov.cn/nszx2023/cktslcx2023.html) — 国家税务总局提供的商品出口退税率查询入口；已核对官方页面，本地访问待复核。
 

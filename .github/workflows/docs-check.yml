@@ -1,0 +1,77 @@
+name: Documentation checks
+
+on:
+  push:
+    paths:
+      - '**/*.md'
+      - '.markdownlint-cli2.yaml'
+      - '.lychee.toml'
+      - '.github/workflows/docs-check.yml'
+  pull_request:
+    paths:
+      - '**/*.md'
+      - '.markdownlint-cli2.yaml'
+      - '.lychee.toml'
+      - '.github/workflows/docs-check.yml'
+  workflow_dispatch:
+  schedule:
+    - cron: '0 2 * * 1'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: docs-${{ github.event.pull_request.number || github.ref }}-${{ github.event_name }}
+  cancel-in-progress: true
+
+jobs:
+  markdown-and-local-links:
+    if: github.event_name != 'schedule'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Set up Node.js
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '22'
+      - name: Check Markdown formatting
+        run: npx --yes markdownlint-cli2@0.23.3
+      - name: Check local files and heading links
+        uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
+        with:
+          lycheeVersion: v0.24.2
+          args: --config .lychee.toml --offline --include-fragments --no-progress -- '*.md' '.github/*.md'
+          output: ${{ runner.temp }}/local-link-report.md
+          fail: true
+
+  external-links:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Check links and generate review report
+        id: links
+        uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
+        with:
+          lycheeVersion: v0.24.2
+          args: --config .lychee.toml --no-progress -- '*.md' '.github/*.md'
+          output: ${{ runner.temp }}/external-link-report.md
+          fail: false
+      - name: Flag links needing review
+        if: steps.links.outputs.exit_code != '0'
+        run: echo '::warning::Some links need manual review. See the job summary and external-link-report artifact.'
+      - name: Upload review report
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: external-link-report
+          path: ${{ runner.temp }}/external-link-report.md
+          if-no-files-found: error
+          retention-days: 14

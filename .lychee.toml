@@ -1,0 +1,5 @@
+# Keep network errors visible; external checks produce a review report in CI.
+max_concurrency = 8
+max_retries = 1
+timeout = 15
+user_agent = "Mozilla/5.0 (compatible; awesome-foreign-trade-link-check/1.0)"

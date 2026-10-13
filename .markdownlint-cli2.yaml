@@ -1,0 +1,6 @@
+globs:
+  - "*.md"
+  - ".github/*.md"
+config:
+  # Chinese explanations and long URLs stay on readable paragraph lines.
+  MD013: false
